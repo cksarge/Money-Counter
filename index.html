@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Counter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="money">$0.00</h1>
+    <p id="stopwatch">00:00:00</p>
+    <div>
+        <label for="rate">Hourly rate ($):</label>
+        <input type="number" id="rate" step="0.01" min="0" value="15">
+    </div>
+    <div>
+        <label for="startingMoney">Starting money ($):</label>
+        <input type="number" id="startingMoney" step="0.01" value="0">
+    </div>
+    <div>
+        <label for="decimals">Decimal places:</label>
+        <input type="number" id="decimals" step="1" min="0" max="10" value="2">
+    </div>
+    <div>
+        <button type="button" id="startBtn">Start</button>
+        <button type="button" id="stopBtn">Stop</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
